@@ -8,9 +8,7 @@ The app work using springboot based microservice which hosts backed service with
 1. Run the backend component and that should launch microservice at port 8888
 2. Test using http://localhost:8888/users
 3. h2 database can be accessed using http://localhost:8888/h2-console
-4. in order to start fonttend app, make sure npm is installed, start node server using command
-`ng serve --open`
-5. App should be available on http://localhost:4200/users
+
 
 
 #### Running in containers
@@ -26,6 +24,14 @@ The app work using springboot based microservice which hosts backed service with
 6. You can can access this using running app
 `curl http://0.0.0.0:8888/users`
 
-###### node part
+###### Using mvn
+
+1. Use spotify plugin to build image and use project id or versions to build
+2. Use docker-compose to use image and start a container from local repo `docker-compose up`
+
+###### Push into docker repo
+1. Use `docker push gaursaxedockerid/demo:0.0.1-SNAPSHOT` to push images
+2. Check your image here https://hub.docker.com/repository/docker/gaursaxedockerid/demo
+
 
 
